@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWARENESS PROGRAM CONDUCTED</title>
+<body background="http://s1.1zoom.net/big0/567/Foliage_Branches_Blue_445622.jpg">
+<head>
+<body>
+<IMG SRC="https://content3.jdmagicbox.com/comp/bangalore/48/080p5606148/catalogue/karnataka-state-pollution-control-board-rajajinagar-bangalore-government-organisations-ui4fx6inh7.jpg" ALT="some text" WIDTH=100 HEIGHT=100>
+</body>
+
+<h1 style="text-align=center;">KARNATAKA STATE POLLUTION CONTROL BOARD</h1>
+</head>
+
+    <style>
+
+        /*table 
+        {
+            width: 70%;
+            font: 17px Arial;
+        }*/
+        table, td 
+        {
+            border: solid 2px black;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            color:#ffdb58;
+        background-color:#ffffb3;
+        }
+th
+{
+           border: solid 2px black;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+            color:black;
+        background-color:#ffdb58;
+}
+
+        .styl
+        {
+             color: #ffdb58;
+             text-align: center;
+        }
+
+    </style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ffdb58;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover{
+  background-color:yellow;
+}
+
+
+
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable1.html">EMPLOYEE DETAILS PERSONNEL</a>
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable2.html">EMPLOYEE DETAILS ADMIN</a>
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable3.html">SALARY DETAILS</a>
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable4.html">TRAINING ATTENDED</a>
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable5.html">AWARENESS PROGRAM CONDUCTED</a>
+  <a href="file:///C:/Users/Dell/Desktop/FORMS%20list/ADMINISTRATIVE/atable6.html">POST RETIREMENT</a>
+ 
+</div>
+<h1 style="text-align=center;">AWARENESS PROGRAM CONDUCTED</h1>
+<body onload="createTable()" class="styl">
+    <ps>Click on the Button to add new row!</p>
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+
+    <!--THE CONTAINER WHERE WE'll ADD THE DYNAMIC TABLE-->
+    <div id="cont"></div>
+
+    <p><input type="button" id="bt" value="Sumbit Data" onclick="sumbit()" /></p>
+</body>
+ <style>
+         .button {
+         background-color: #ffdb58;
+         border: solid 2px black;
+         color: black;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 15px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+      </style>
+   </head>
+   <body>
+      <a href="file:///C:/Users/Dell/Desktop/table1.html" class="button"><-- Previous Page</a>
+   </body>
+
+<script>
+    // ARRAY FOR HEADER.
+    var arrHead = new Array();
+    arrHead = ['','NAME OF THE EMPLOYEE', 'PROGRAM DETAILS', 'CONDUCTED AT', 'FROM','TO','ATTACH PHOTOS','AMOUNT SPENT BY','AMOUNT SPENT'];      // SIMPLY ADD OR REMOVE VALUES IN THE ARRAY FOR TABLE HEADERS.
+
+    // FIRST CREATE A TABLE STRUCTURE BY ADDING A FEW HEADERS AND
+    // ADD THE TABLE TO YOUR WEB PAGE.
+    function createTable() {
+        var empTable = document.createElement('table');
+        empTable.setAttribute('id', 'hwmTable');            // SET THE TABLE ID.
+
+        var tr = empTable.insertRow(-1);
+
+        for (var h = 0; h < arrHead.length; h++) {
+            var th = document.createElement('th');          // TABLE HEADER.
+            th.innerHTML = arrHead[h];
+            tr.appendChild(th);
+        }
+
+        var div = document.getElementById('cont');
+        div.appendChild(empTable);    // ADD THE TABLE TO YOUR WEB PAGE.
+    }
+
+    // ADD A NEW ROW TO THE TABLE.s
+    function addRow() {
+        var empTab = document.getElementById('hwmTable');
+
+        var rowCnt = empTab.rows.length;        // GET TABLE ROW COUNT.
+        var tr = empTab.insertRow(rowCnt);      // TABLE ROW.
+        tr = empTab.insertRow(rowCnt);
+
+        for (var c = 0; c < arrHead.length; c++) {
+            var td = document.createElement('td');          // TABLE DEFINITION.
+            td = tr.insertCell(c);
+
+            if (c == 0) {           // FIRST COLUMN.
+                // ADD A BUTTON.
+                var button = document.createElement('input');
+
+                // SET INPUT ATTRIBUTE.
+                button.setAttribute('type', 'button');
+                button.setAttribute('value', 'Remove');
+
+                // ADD THE BUTTON's 'onclick' EVENT.
+                button.setAttribute('onclick', 'removeRow(this)');
+
+                td.appendChild(button);
+            }
+            else {
+                // CREATE AND ADD TEXTBOX IN EACH CELL.
+                var ele = document.createElement('input');
+                ele.setAttribute('type', 'text');
+                ele.setAttribute('value', '');
+
+                td.appendChild(ele);
+            }
+        }
+    }
+
+    // DELETE TABLE ROW.
+    function removeRow(oButton) {
+        var empTab = document.getElementById('hwmTable');
+        empTab.deleteRow(oButton.parentNode.parentNode.rowIndex);       // BUTTON -> TD -> TR.
+    }
+
+    // EXTRACT AND SUBMIT TABLE DATA.
+    function sumbit() {
+        var myTab = document.getElementById('hwmTable');
+        var values = new Array();
+
+        // LOOP THROUGH EACH ROW OF THE TABLE.
+        for (row = 1; row < myTab.rows.length - 1; row++) {
+            for (c = 0; c < myTab.rows[row].cells.length; c++) {   // EACH CELL IN A ROW.
+
+                var element = myTab.rows.item(row).cells[c];
+                if (element.childNodes[0].getAttribute('type') == 'text') {
+                    values.push("'" + element.childNodes[0].value + "'");
+                }
+            }
+        }
+        console.log(values);
+    }
+</script>
+
+
+
+</html>

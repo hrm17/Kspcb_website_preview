@@ -1,0 +1,429 @@
+<html>
+<head>
+<head>
+    <title>PCB DASHBOARD</title>
+
+<head>
+<body>
+<IMG SRC="https://content3.jdmagicbox.com/comp/bangalore/48/080p5606148/catalogue/karnataka-state-pollution-control-board-rajajinagar-bangalore-government-organisations-ui4fx6inh7.jpg" ALT="some text" WIDTH=100 HEIGHT=100>
+</body>
+
+<h1 style="text-align=center;">KARNATAKA STATE POLLUTION CONTROL BOARD</h1>
+</head>
+<style>
+table{
+	font-family:arial,sans-seriff;
+	border-collapse: collapse;
+	width:100%; 
+	padding:20px;
+}	
+
+td,th{
+	border:2px solid #ffff00;
+	text-align: left;
+	padding: 4px;
+}
+tr:nth-child(odd){
+	border: 2px;
+	background-color: #ffdb58;
+}
+</style>
+</head>
+<h1 style="text-align=center;"> PCB DASHBOARD </h1>
+<head>
+        
+        <title>javascript: calculate two numbers</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function calc1()
+            {
+                var exol = parseFloat(document.getElementById('exol').value);
+                var sqmt = parseFloat(document.getElementById('sqmt').value);
+                
+                var oper = '%';
+                
+                if(oper === '%')
+                {
+                    document.getElementById('per').value = (exol/sqmt)*100;
+                }
+            }
+
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var sqmt = parseFloat(document.getElementById('sqmt').value);
+                
+                var oper = '%';
+                
+                if(oper === '%')
+                {
+                    document.getElementById('peri').value = (n1/sqmt)*100;
+                }
+            }
+function setColor(e) {
+  var target = e.target,
+      count = +target.dataset.count;
+
+   target.style.backgroundColor = count === 1 ? "#7FFF00" : 'red';
+   target.dataset.count = count === 1 ? 0 : 1;
+}
+
+function myFunction(y) {
+  var x = document.getElementById('y');
+  x.disabled = true;
+}
+
+            
+        </script>   
+    </head> 
+<body>
+<table>
+<tr>
+<th>NAME OF THE INDUSTRY:</th>
+<td><input type="text" id="noi" name="NAME OF THE INDUSTRY:" placeholder=" "></td>
+
+<th>UNIQUE ID:</th>
+<td colspan="3"> <input type="text" id="id" name="ID" placeholder=" " maxlength="50" cols="50"></td>
+
+</tr>
+<tr>
+	<th>ADDRESS:</th>
+    <td><input type="text" id="add" name="ADDRESS:" placeholder=" "></td>
+
+    <th>REGIONAL OFFICE:</th>
+    <td colspan="3"> <input type="text" id="ro" name="REGIONAL OFFICE" placeholder=" "></td>
+</tr>
+<tr>
+	<th>RO NAME:</th>
+    <td><input type="text" id="ron" name="RO NAME:" placeholder=" "></td>
+
+    <th>RO NUMBER:</th>
+    <td> <input type="text" id="ronum" name="RO NUMBER:" placeholder=" "></td>
+
+    <th>RO OFF NO:</th>
+    <td> <input type="text" id="rooff" name="RO OFF NO:" placeholder=" "></td>
+ </tr> 
+ <tr>
+ 	<th>SEO OFFICER:</th>
+    <td><input type="text" id="seo" name="SEO OFFICER:" placeholder=" "></td>
+
+    <th>SEO NAME:</th>
+    <td> <input type="text" id="seon" name="SEO NAME:" placeholder=" "></td>
+
+    <th>PHONE NO.</th>
+    <td> <input type="text" id="ph" name="PHONE NO." placeholder=" "></td>
+ </tr>
+ <tr>
+    <th>SEO OFF no.</th>
+    <td><input type="text" id="seooffno" name="SEO OFF no." placeholder=" "></td>
+
+    <th>LIST OF OTHER OFFICERS WITH DESIGNATION:</th>
+    <td colspan="3"> <input type="text" id="lood" name="LIST OF OTHER OFFICERS WITH DESIGNATION:" placeholder=" "></td>
+    
+</tr>
+<tr>
+	<th>LATTITUDE:</th>
+    <td><input type="text" id="lat" name="LATTITUDE:" placeholder=" "></td>
+
+    <th>LONGITUDE:</th>
+    <td> <input type="text" id="lon" name="LONGITUDE:" placeholder=" "></td>
+
+    <th>EXTENT OF LAND</th>
+    <td> <input type="text" id="sqmt"/></td>
+ </tr>
+ <tr>
+    <td><label for="Land Use Pattern">LAND USE PATTERN</label></td>
+    <td><select id="Land Use Pattern" name="Land use pattern">
+      <option value="agriculture">Agriculture</option>
+      <option value="residential">Residential</option>
+      <option value="industrial">Industrial</option>
+      <option value="commercial">Commercial</option>
+      <option value="freezone">Freezone</option>
+      <option value="others">Others</option>
+    </select> </td>
+
+    <td><label for="Is the Land Converted">IS THE LAND CONVERTED</label></td>
+    <td><select id="Is the Land Converted" name="Is the land converted">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+  	</select></td>
+  	<td colspan="2"><input type="file" id="myFile">
+<p>
+<button onclick="myFunction(myFile)">Submit</button>
+</p>
+</td>
+ </tr>
+
+
+<tr>
+	<td colspan="3"> <label for="soak">Status of A Khata</label></td>
+	<td colspan="3"><label for="sobk">Status of B Khata</label></td>
+	
+</tr>
+<tr>
+	<td><label for="Planning Authority">PLANNING AUTHORITY</label></td>
+    <td><select id="Planning authority" name="Planning authority">
+      <option value="KIADB">KIADB</option>
+      <option value="DC">DC</option>
+      <option value="ANY OTHER">ANY OTHER</option>
+  </select></td>
+  <th>TOTAL BUILT UP AREA IN sq mt:</th>
+   <td><input type="text" id="exol"/></td>
+ <th>PERCENTAGE OF TOTAL BUILT UP AREA</th>
+    <td colspan="1"> <button onclick="calc1();">%</button>
+        <input type="text" id="per"/></td>
+
+</tr>  
+<tr>
+<th>AREA OF GREEN SCAPE IN SQ MT:</th>
+<td><input type="text" id="n1"/></td>
+
+<th>PERCENTAGE OF GREEN SCALE</th>
+<td colspan="3"> <button onclick="calc();">%</button>
+        <input type="text" id="peri"/></td>
+
+</tr>
+
+ <tr>
+
+  <th>CAPITAL INVESTMENT IN CR</th>
+    <td><input type="text" id="lat" name="CAPITAL INVESTMENT IN CR" placeholder=" "></td>
+
+    <th><label for="CATEGORY">CATEGORY</label></th>
+
+    <td><select id="CATEGORY" name="CATEGORY">
+      <option value="LARGE">LARGE</option>
+      <option value="MEDIUM">MEDIUM</option>
+      <option value="SMALL">SMALL</option>
+      <option value="TINY">TINY</option>
+      <option value="RESIDENTIAL">RESIDENTIAL</option>
+      <option value="COMMERCIAL">COMMERCIAL</option>
+<option value="OTHERS">OTHERS</option>
+    </select> </td>
+
+
+    <td><select id="CATEGORY" name="CATEGORY">
+      <option value="RED">RED</option>
+      <option value="ORANGE">ORANGE</option>
+      <option value="GREEN">GREEN</option>
+      <option value="WHITE">WHITE</option>
+      <option value="OTHERS">OTHERS</option>  
+    </select> </td>
+<th scope="col" colspan="1">CONSENT FEE UNDER</th>
+
+<tr>
+<td colspan="0.25"><input type="button" id="button1" value="WATER ACT" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="AIR ACT" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="HWN RULES" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="BMW" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="PLASTIC" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="E-WASTE" style="color:black" onclick="setColor(event)"; data-count="1" />
+</tr>
+<tr>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction(myFile)">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile1">
+<p>
+<button onclick="myFunction(myFile1)">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile2">
+<p>
+<button onclick="myFunction(myFile2)">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile3">
+<p>
+<button onclick="myFunction(myFile3)">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+</tr>
+<tr>
+<td colspan="6">
+</td>
+</tr>
+<tr>
+<td colspan="6">
+</td>
+</tr>
+<tr>
+<td colspan="0.25"><input type="button" id="button1" value=" SWM RULES" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="C&S WM" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="BATTERIES" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="NOISE" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="EIA" style="color:black" onclick="setColor(event)"; data-count="1" />
+<td colspan="0.25"><input type="button" id="button1" value="PLI ACT" style="color:black" onclick="setColor(event)"; data-count="1" />
+</tr>
+<tr>
+<td>
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile");
+  x.disabled = true;
+}
+</script>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+<td>
+<input type="file" id="myFile">
+<p>
+<button onclick="myFunction()">Submit</button>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+<td>
+<input type="date" id="myDate" value="yyyy-mm-dd">
+</td>
+</tr>
+
+<tr>
+<th>EMERGENCY RESPONSE NEIGHBOURHOOD WITH DISTANCE IN METERS/KM</th>
+<td colspan="8"></td>
+</tr>
+<tr>
+	<th>WATER BODY</th>
+    <td><input type="text" id="wabo" name="WATER BODY" placeholder=" "></td>
+
+    <th>LAKE</th>
+    <td> <input type="text" id="lak" name="LAKE" placeholder=" "></td>
+
+    <th>RIVER</th>
+    <td> <input type="text" id="riv" name="RIVER" placeholder=" "></td>
+ </tr> 
+<tr>
+	<th>SEA SHORE</th>
+    <td><input type="text" id="sesh" name="SEA SHORE" placeholder=" "></td>
+
+    <th>HABITAT</th>
+    <td> <input type="text" id="habi" name="HABITAT" placeholder=" "></td>
+
+    <th>TYPE OF SOIL</th>
+    <td> <input type="text" id="tos" name="TYPE OF SOIL" placeholder=" "></td>
+ </tr> 
+<tr>
+	<th>LIST OF AFFECTED AREAS IN CASE OF EMERGENCY/ENV ACCIDENTS WITHIN ___ KMS</th>
+<td>       
+<form method="get" action="a.html">
+      <select id="firstname" name="firstname">
+      <option value="1">1</option>
+     <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+ <option value="10">10</option>
+     <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+<option value="60">60</option>
+<option value="70">70</option>
+<option value="80">80</option>
+<option value="90">90</option>
+<option value="100">100</option>
+ 
+    </select>
+ <br>
+<br> <input type=submit value="LOCATION MAP">
+    </form>
+   </td>
+ <td><input type="text" id="list" name="LIST OF AFFECTED AREAS IN CASE OF EMERGENCY/ENV ACCIDENTS WITHIN 5 KMS" placeholder=" "></td>
+
+    <th>AFFECTED AREAS IN CASE OF DISCHARGE OF EFFLUENTS</th>
+    <td colspan="3"> <input type="text" id="doe" name="AFFECTED AREAS IN CASE OF DISCHARGE OF EFFLUENTS" placeholder=" " maxlength="500" rows="5" cols="100"></td>
+ </tr> 
+
+
+
+</table>
+</body>
+</html>

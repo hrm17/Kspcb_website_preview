@@ -1,0 +1,108 @@
+﻿<html>
+    <head>
+        <title>
+            DCB register
+        </title>
+        <style type="text/css">
+	.TFtable{
+		width:100%; 
+		border-collapse:collapse; 
+	}
+	.TFtable td{ 
+		padding:7px; border:#4e95f4 1px solid;
+	}
+	.TFtable tr:nth-child(odd){ 
+		background: #b8d1f3;
+	}
+	.TFtable tr:nth-child(even){
+		background: #dae5f4;
+	}
+</style>
+<script>
+function addRow() {
+alert("bfefgbioe");
+    var table = document.getElementById("myTable");
+  var x = document.getElementById("myTable").rows.length;
+  var row = table.insertRow();
+  var cell1 = row.insertCell(0);
+  cell1.innerHTML = "NEW CELL1";
+}
+</script>
+
+    </head>
+    <body>
+    <table class="TFtable" id="myTable">
+    <th colspan="26">DCB REGISTER {DEMAND COLLECTION AND BALANCE} AS ON THE YEAR</th>
+	<tr><td>NO</td><td>NAME</td><td>ADDRESS</td>
+	<td>DISTRICT</td><td>RO</td><td>SIZE</td>
+	<td>CATEGORY</td><td>COVERED AS</td><td>CL(CR.)</td>
+	<td colspan="5">DEMAND IN LAKHS</td><td colspan="5">COLLECTION IN LAKHS</td><td colspan="5">BALANCE IN LAKHS</td><td>ACTION TAKEN FOR COLLECTING THE BALANCE</td><td></td>
+    </tr>
+    <tr>
+      <td colspan="9"></td> 
+       <td >WPC</td> 
+       <td>APC</td>
+       <td>EC</td>
+       <td>BG</td>
+       <td>OTH</td>
+       <td>WPC</td> 
+       <td>APC</td>
+       <td>EC</td>
+       <td>BG</td>
+       <td>OTH</td>
+       <td>WPC</td> 
+       <td>APC</td>
+       <td>EC</td>
+       <td>BG</td>
+       <td>OTH</td>
+       <td colspan="2"></td>
+    </tr>
+</table>
+   
+    <ol>
+        <li>
+
+            The demand to be calculated based on the date of expiry for each category. Example for Red, upto June, Orange upto September etc., </li>
+        <li>
+	At Others, drop down with Environmental Compensation, Bank Guarantee, Analysis Charges AND Others
+        </li>
+        <li>
+    The Demand columns can be extended.
+        </li>
+        <li>
+            
+	The final demand shall be as on date, cumulative including old balance.
+        </li>
+        <li>
+	By clicking on each figure ( WPC / APC / EC / BG/ OTHERS), a dialogue box shall appear year wise as shown below: (EXAMPLE, WHEN YOU CLICK ON WPC).
+        </li>
+        <li>
+	EC Stands for Environmental Compensation – to be calculated based on the formula.  When you put the pointer the dialogue box with calculations shall appear.  
+        </li>
+        <li>
+	BG stands for Bank Guarantee. As it is released, it shall be made zero indicating the date of refund in a dialogue box. 
+        </li>
+    </ol>
+    
+    <table class="TFtable">
+    <th colspan="6">DCB Details for industry UNDER WPC</th>
+	<tr>
+	<td>NO</td>
+	<td>FROM</td>
+	<td>TO</td>
+	<td>FEE TO BE PAID IN LAKHS</td>
+    <td>PAID IN LAKHS</td>
+    <td>BALANCE TO PAY IN LAKHS</td>
+    </tr>
+     <tr>
+        <td colspan="6">Total</td>
+    </tr>
+    </table>
+   <ol start="8">
+       <li>The rows to be extended automatically based on the balance of number of years to be paid.  By default 3 years balance to be shown up to the current year. </li>
+   </ol>
+    </body>
+</html>
+
+
+

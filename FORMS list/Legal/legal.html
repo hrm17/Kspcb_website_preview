@@ -1,0 +1,128 @@
+<html>
+<head></head>
+<body>
+<div class="popup-pcb my-popup">
+<header class="popup-header">
+<span>LEGAL</span>
+<span onClick={()=>{document.getElementById('viewLegal').style.display='none'}}><i class="vs-icon notranslate icon-scale vs-dialog-cancel vs-dialog-cancel--icon notranslate material-icons null">close</i></span>
+</header>
+<div class="popup-content">
+<div class="col-md-12">
+<div class="pcb-con-tbody pcb-table-tbody ">
+<table class="pcb-table pcb-table-tbody-table">
+<thead class="pcb-table--thead">
+<tr>
+<th>
+<div class="pcb-table-text">sl no.</div>
+</th>
+<th>
+<div class="pcb-table-text">case filed against</div>
+</th>
+<th>
+<div class="pcb-table-text">cc no.</div>
+</th>
+<th>
+<div class="pcb-table-text">date of filing</div>
+</th>
+<th>
+<div class="pcb-table-text">court</div>
+</th>
+<th>
+<div class="pcb-table-text">advocate</div>
+</th>
+<th>
+<div class="pcb-table-text">present status</div>
+</th>
+<th>
+<div class="pcb-table-text">last date of hearing</div>
+</th>
+<th>
+<div class="pcb-table-text">next date of hearing</div>
+</th>
+<th>
+<div class="pcb-table-text">legal fee fixed</div>
+</th>
+<th>
+<div class="pcb-table-text">payment made so far</div>
+</th>
+<th>
+<div class="pcb-table-text">case filed by officer</div>
+</th>
+<th>
+<div class="pcb-table-text">violaton</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tr-values pcb-table--tr tr-table-state-null ">
+<td class="td pcb-table--td" >sl no.</td>
+<td class="td pcb-table--td" >case filed against</td>
+<td class="td pcb-table--td" >cc no. </td>
+<td class="td pcb-table--td" >date of filing</td>
+<td class="td pcb-table--td" >court</td>
+<td class="td pcb-table--td" >advocate</td>
+<td class="td pcb-table--td" >present status</td>
+<td class="td pcb-table--td" >last date of hearing</td>
+<td class="td pcb-table--td" >next date of hearing</td>
+<td class="td pcb-table--td" >legal fee fixed</td>
+<td class="td pcb-table--td" >payment made so far</td>
+<td class="td pcb-table--td" >case filed by officer</td>
+<td class="td pcb-table--td" >violaton</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+.pcb-con-tbody {
+font-family: 'Montserrat',Sans-serif;
+max-height: 220px;
+overflow: auto;
+}
+.pcb-table-tbody {
+position: relative;
+}
+.pcb-table-tbody-table {
+width: 100%;
+margin: 0;
+min-width: 400px;
+position: relative;
+overflow: auto;
+}
+.pcb-table-tbody-table tr {
+font-size: 13px;
+cursor: pointer;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+background:#ffffff;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-bottom: 1px solid rgba(231, 11, 11, 0.075);
+}
+.tr-values:not(.activeEdit):not(.tr-expandedx):not(.hoverFlat):hover {
+border-radius: 5px;
+transform: scale(0.99);
+}
+.tr-values:not(.activeEdit):not(.tr-expandedx):not(.hoverFlat):hover
+.tr-values {
+-webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+box-shadow: 0 2px 12px 0 rgba(233, 22, 22, 0.884);
+}
+.tr-values td {
+padding: 10px 20px;
+}
+.pcb-table-text {
+text-transform: uppercase;
+padding: 10px 20px;
+color: #626262;
+font-size: 12px;
+}
+</style>
+</body>
+</html>
